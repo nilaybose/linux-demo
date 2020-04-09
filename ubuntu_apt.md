@@ -49,12 +49,14 @@ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu bi
 
 ### Install
 
-- sudo apt-get update && sudo apt-get upgrade -y
-- sudo apt-get dist-upgrade # proactive
-- sudo apt-get install <package_name>
-- sudo apt-get install <package_name> --no-upgrade
-- sudo apt-get install <package_name> --only-upgrade
-- sudo apt-get install <package_name>=<version_number>
+```shell script
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get dist-upgrade # proactive
+sudo apt-get install <package_name>
+sudo apt-get install <package_name> --no-upgrade
+sudo apt-get install <package_name> --only-upgrade
+sudo apt-get install <package_name>=<version_number>
+```
 
 ### Uninstall
 
