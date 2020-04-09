@@ -1,6 +1,6 @@
 ## Ubuntu utility commands
 
-###The general syntax of the /etc/apt/sources.list file takes the following format:
+### The general syntax of the /etc/apt/sources.list file takes the following format:
 
 - deb http://repo.tld/ubuntu distro component...
 
@@ -31,7 +31,12 @@ grep -r --include '*.list' '^deb ' /etc/apt/ | sed -re 's/^\/etc\/apt\/sources\.
 
 ### List of installed component
 
-- sudo apt list --installed | less
+```
+sudo apt list --installed | less
+apt-cache pkgnames <search_term>
+apt-cache search <search term>
+apt-cache pkgnames <search_term>  # Info about the package
+```
 
 ### Add the repository manually
 
@@ -41,6 +46,15 @@ grep -r --include '*.list' '^deb ' /etc/apt/ | sed -re 's/^\/etc\/apt\/sources\.
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse'
 ```
+
+### Install
+
+- sudo apt-get update && sudo apt-get upgrade -y
+- sudo apt-get dist-upgrade # proactive
+- sudo apt-get install <package_name>
+- sudo apt-get install <package_name> --no-upgrade
+- sudo apt-get install <package_name> --only-upgrade
+- sudo apt-get install <package_name>=<version_number>
 
 ### Uninstall
 
