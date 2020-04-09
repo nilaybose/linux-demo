@@ -1,0 +1,12 @@
+/target
+/classes
+/checkouts
+profiles.clj
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+.hgignore
+.hg/
+.idea/
+.eclipse/
