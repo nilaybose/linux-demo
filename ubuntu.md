@@ -29,6 +29,19 @@ grep -r --include '*.list' '^deb ' /etc/apt/ | sed -re 's/^\/etc\/apt\/sources\.
 
 ```
 
+### List of installed component
+
+- sudo apt list --installed | less
+
+### Add the repository manually
+
+- First import the repository public key, then add the repository
+
+``` shell script
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse'
+```
+
 ### Uninstall
 
 ```shell script
