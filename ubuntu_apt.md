@@ -1,4 +1,4 @@
-## Ubuntu utility commands
+## Ubuntu APT & APT-GET
 
 ### The general syntax of the /etc/apt/sources.list file takes the following format:
 
