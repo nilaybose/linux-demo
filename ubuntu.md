@@ -10,4 +10,4 @@ apt-cache policy
 cat /etc/apt/sources.list /etc/apt/sources.list.d/*
 ```
 
-[More on APT] (https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/)
+[More on APT](https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/)
